@@ -1,0 +1,24 @@
+fastapi
+uvicorn
+python-dotenv
+python-multipart
+opencv-python
+pymongo
+numpy
+paddleocr
+openpyxl
+requests
+logging
+jsonschema
+paddlepaddle -i https://pypi.org/simple
+protobuf==3.20.3
+langchain
+langchain_core
+langchain_google_genai
+langchain_openai
+langgraph
+langsmith
+pydantic
+email-validator 
+langchain-community
+reportlab

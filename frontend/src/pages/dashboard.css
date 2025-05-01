@@ -1,0 +1,415 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: none; /* Remove direct background image */
+}
+
+/* Blurred Background Effect */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://arizent.brightspotcdn.com/d9/90/b6d87998419b98af47027241a467/ey-london.jpg') center/cover no-repeat;
+    filter: blur(08px); /* Apply Blur Effect */
+    z-index: -1; /* Send behind everything */
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Top Bar (Header) */
+.top-bar {
+    position: fixed;
+    height: 8%;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: black; /* Black header */
+    padding: 10px 20px;
+    display: flex;
+    z-index: 1000;
+    justify-content: space-between; /* Logo on left, items centered */
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, +0, 0.3);
+}
+/* Make the table container translucent */
+.table-container {
+    background: rgba(255, 255, 255, 0.7); /* White with 70% opacity */
+    border-radius: 10px; /* Rounded edges */
+    padding: 20px;
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Logo Styling */
+.logo-container img {
+    height: 40px; /* Adjust logo size */
+    cursor: pointer;
+}
+
+/* Center Header Items */
+.center-header {
+    display: flex;
+    margin-left: -59%;
+    align-items: left;
+    gap: 20px;
+    background: #f0e6e600; /* Pearl-like color */
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* Dropdown Styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    background: rgb(228, 214, 6);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.dropdown-btn:hover {
+    background: #ddddddf9;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.938);
+    min-width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 10px;
+    text-align: left;
+    border: none;
+    width: 100%;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.dropdown-item:hover {
+    background: #f0e6e6;
+}
+
+/* Profile Button */
+.profile-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    width: fit-content;
+}
+.profile-btn:hover {
+background:transparent;
+}
+
+/* Main Content */
+.main-content {
+    display:inline-flex;
+    flex: 1;
+    padding: 20px;
+    gap: 20px;
+    position: relative;
+    margin-top:5%;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 25%;
+    background: rgba(255, 255, 255, 0.205);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.loan-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.loan-item {
+    padding: 10px;
+    background: #f0e6e6e4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.loan-item:hover {
+    background: #ddd;
+}
+
+
+
+/* Upload Section */
+.right-content {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.178);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.upload-section {
+    margin-top: -3%;
+}
+
+/* Table Styling */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: -1%;
+}
+
+.styled-table th, .styled-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.submitted-badge {
+    background: green;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.required-badge {
+    background: red;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* File Upload */
+.file-icon {
+    cursor: pointer;
+    width: -10%;
+}
+
+/* Submit Button */
+.submit-btn {
+    background: #ffcc00;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.submit-btn:hover {
+    background: darkblue;
+}
+
+.verify-btn {
+    background-color: #d89c1c; /* Cute pink color */
+    color: white;
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+    padding: 6px 12px;
+    text-align:center;
+    border: none;
+    border-radius: 15px; /* Rounded shape */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .verify-btn:hover {
+    background-color: #ffcc00; /* Slightly lighter pink on hover */
+    transform: scale(1.05);
+  }
+  .loan-container {
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+}
+
+
+
+
+.loan-item-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.178);
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding: 10px;
+    transition: all 0.2s ease;
+  }
+  
+  .loan-item-container:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .loan-item {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+  }
+  
+  .progress-bar {
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-top: 8px;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: green;
+    border-radius: 5px;
+  }
+  
+  .progress-text {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  .top-right-profile {
+    position: fixed;
+    top: 90px; /* Adjust as per your navbar height */
+    right: 30px;
+    z-index: 1000;
+  }
+  
+  /* .profile-card {
+    background: rgba(30, 30, 30, 0.413);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 1.5rem;
+    color: white;
+    width: 260px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  } */
+  
+  .profile-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+  .profile-avatar-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+  
+  .profile-info {
+    text-align: center;
+  }
+  
+  .profile-info h3 {
+    margin: 0.5rem 0 0.2rem;
+    font-size: 1.2rem;
+  }
+  
+  .profile-info p {
+    margin: 2px 0;
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+  .profile-actions {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  
+  .profile-actions li {
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
+    border-top: 1px solid #444;
+    cursor: pointer;
+  }
+  
+  .profile-actions li:hover {
+    color: #00aeef;
+  }
+  .dashboard-iframe-container {
+    width:70%;
+    height:fit-content;
+    display:inline-flex;
+    padding: 10px;
+    background-color: rgba(30, 30, 30, 0.413);
+    border: 1px solid rgba(30, 30, 30, 0.413);
+    border-radius: 8px;
+  }
+  .profile-dropdown-container {
+    position: relative;
+  }
+  
+  .profile-card-dropdown {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    z-index: 10;
+    background-color:rgba(30, 30, 30, 0.413);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 250px;
+  }
+  /* .profile-card-dropdown {
+    background: rgba(30, 30, 30, 0.413);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 1.5rem;
+    color: white;
+    width: 260px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  } */
+  
+  .logout-button {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .logout-button:hover {
+    background-color: #d32f2f;
+  }
+  

@@ -1,0 +1,101 @@
+/* src/components/KYCDetails.css */
+
+.kyctable-container {
+    padding: 1.5rem;
+    font-family: Arial, sans-serif;
+    align-content: center;
+    position: absolute;
+    background: rgba(30, 30, 30, 0.85);
+    justify-self:right;
+    justify-content: right;
+    margin-left: 20%;
+    border-radius: 10px;
+    margin-top: -12%;
+
+  }
+  
+  .kyc-heading {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .kyc-file-block {
+    margin-bottom: 2rem;
+  }
+  
+  .file-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #444;
+  }
+  
+  .kyc-table-vertical {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #0a0a0a82;
+    border: 1px solid #ccc;
+  }
+  
+  .kyc-table-vertical th,
+  .kyc-table-vertical td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: left;
+  }
+  
+  .kyc-table-vertical th {
+    background-color: #0a0a0a82;
+  }
+  
+  .entry-col {
+    font-weight: 600;
+    color: white;
+    width: 30%;
+  }
+  .edit-input {
+    box-sizing: border-box;
+    background-color: #1e1e1e;
+    border: 1px solid #555;
+    border-radius: 4px;
+    color: #fff;
+  }
+  input.edit-input{
+    border: 0.1px solid #ccc;
+    font-family: inherit;
+    max-width: 130px;
+    font-size: inherit;
+    padding: 0.01px 2px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+  
+  /* Input focus effect */
+  .edit-input:focus {
+    outline: none;
+    border-color: #00bfff;
+    box-shadow: 0 0 5px rgba(0, 191, 255, 0.5);
+  }
+  
+  .low-confidence {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .high-confidence {
+    color: green;
+    font-weight: bold;
+  }
+  .edit-icon {
+    margin-left: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #e6b800;
+  }
+  
+  .edit-icon:hover {
+    color: #fff;
+  }

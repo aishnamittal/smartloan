@@ -1,0 +1,49 @@
+/* LoanRiskDropdown.css */
+.risk-dropdown-container {
+    background-color:  rgba(30, 30, 30, 0.85);
+    padding: 1.5rem;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 0rem auto;
+    color: white;
+    margin-left: 70%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .custom-dropdown {
+    margin-bottom: 1rem;
+  }
+  
+  .custom-dropdown-toggle {
+    width: 100%;
+    background-color: #ffcc00;
+    color: rgb(0, 0, 0);
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .custom-dropdown-toggle:hover {
+    background-color: #495057;
+  }
+  
+  .custom-dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    background-color: #2c2f38;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    padding: 0 1rem;
+  }
+  
+  .custom-dropdown-content.show {
+    max-height: 500px; /* Enough space for content */
+    padding: 1rem;
+  }
+  

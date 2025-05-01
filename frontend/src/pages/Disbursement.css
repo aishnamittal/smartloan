@@ -1,0 +1,93 @@
+.container {
+  width: 90%;
+  max-width: 800px;
+  background: rgba(30, 30, 30, 0.85);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10%;
+}
+
+.disbursement-container {
+  width: 100%;
+  display: flex;
+  background: transparent;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #e6b800;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.disb {
+  color:  #000000;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  width: 80%;
+  margin: 10px 0;
+  text-align: left;
+  font-size: medium;
+  font-weight: bold;
+  color: white;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.loan-details {
+  width: 100%;
+  background: transparent;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.loan-details p {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.loan-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.loan-table th, .loan-table td {
+  padding: 12px 20px;
+  border: 1px solid #ffffff;
+  text-align: left;
+}
+
+.loan-table th {
+  background-color: #121212;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+

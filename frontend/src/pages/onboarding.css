@@ -1,0 +1,111 @@
+/* Onboarding Tab Container */
+.onboarding-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 800px;
+    background: rgba(30, 30, 30, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 0%;
+    text-align: center;
+  }
+  
+  /* PDF Preview */
+  .pdf-preview {
+    width: 100%;
+    height: 500px;
+    border: 2px solid #ffcc00;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  /* Send Email Button */
+  .send-email-btn {
+    background-color: #ffcc00;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    display: block;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+  }
+  
+  .send-email-btn:hover {
+    background: #e6b800;
+    transform: scale(1.05);
+  }
+  /* Edit Button */
+  .edit-btn {
+    background-color: #ffcc00;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    display: block;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+  }
+  
+  .edit-btn:hover {
+    background: #e6b800;
+    transform: scale(1.05);
+  }
+  
+  /* Email Status Message */
+  .email-status {
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+  }
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 200px; /* Adjust the height for better visibility */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical; /* Allows user to resize if needed */
+}
+.proceed-button {
+  background-color: #ffcc00;
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-left: 400%;
+  border-radius: 5px;
+  font-weight: bold;
+  display: block;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+/* Hover Effect */
+.proceed-button:hover {
+  background: #e6b800;
+  transform: scale(1.05);
+}

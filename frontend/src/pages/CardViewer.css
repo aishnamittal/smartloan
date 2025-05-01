@@ -1,0 +1,41 @@
+.card-viewer-container {
+    /* position: absolute; */
+    padding-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+  
+  .button-group {
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .button-group button {
+    background-color: #e6b800;
+    color: rgb(0, 0, 0);
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .button-group button:hover {
+    background-color: #ffcc00;
+  }
+  
+  .document-image {
+    position: absolute;
+    max-width: 100%;
+    max-height: 250px;
+    background: rgba(30, 30, 30, 0.85);
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin-left: 20%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: -3%;
+  }
+  

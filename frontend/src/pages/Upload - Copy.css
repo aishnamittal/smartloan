@@ -1,0 +1,615 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: none;
+  color: white;
+}
+
+/* Blurred Background Effect */
+body::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://arizent.brightspotcdn.com/d9/90/b6d87998419b98af47027241a467/ey-london.jpg') center/cover no-repeat;
+  filter: blur(3px);
+  z-index: -1;
+}
+.risk-page{
+  overflow:auto;
+  width:90%;
+  height: auto;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+/* Upload Container */
+.upload-container {
+  width:90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+/* Tab Bar */
+.tab-bar {
+  display: flex;
+  width: 90%;
+  height: 50px;
+  background: rgba(30, 30, 30, 0.9);
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+  border-bottom: 3px solid #ffcc00;
+  margin-left: 10%;
+}
+
+/* Tab Buttons */
+.tab-button {
+  flex-grow: 1;
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.tab-button:hover {
+  background: rgba(255, 204, 0, 0.2);
+}
+
+.tab-button.active {
+  background: #ffcc00;
+  color: black;
+  font-weight: bold;
+}
+/* uuid and login icon css */
+.uuid{
+  background: #121211;
+  margin-left: 10%;
+  margin-top: 10px;
+  align-self:self-start;
+  font-size:medium;
+  font-weight: bold; /* Adds spacing inside the box */
+  border-radius: 8px; /* Rounds the corners */ /* Optional: adds a subtle border */
+  display:flexbox; /* Ensures it wraps around the text properly */
+  padding-inline: 10px;
+}
+.uuid:hover{
+  background-color: black;
+}
+.uuidtext{
+  margin-bottom: auto;
+  margin-top: auto;
+  padding-block: 20%;
+  color: #fff;
+}
+.login-icon{
+font-size: medium;
+color: yellow;
+}
+/* KYC Tab Container */
+.kyc-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 800px;
+  background: rgba(30, 30, 30, 0.85);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  flex-direction: row;
+  margin-top: 3%;
+}
+/* risk Tab Container */
+/* .risk-container {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 800px;
+  background: rgba(30, 30, 30, 0.85);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  flex-direction: row;
+  margin-top: 3%;
+} */
+.risk-container {
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width:auto; /* ✅ Ensures it does not shrink */
+  max-width: 800px;
+  background: rgba(30, 30, 30, 0.85);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  flex-direction: row;
+  margin-top: 2%; /* ✅ Keeps it stable */
+  flex-shrink: 0%; /* ✅ Prevents it from resizing when lrr-buttons are added */
+}
+
+
+/* GIF Box */
+.kyc-gif-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  position:inherit ;
+  margin-left: -10%;
+
+}
+
+/* GIF Styling */
+.kyc-gif {
+  width: 200px;  /* Adjust as needed */
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Text Below GIF */
+.kyc-gif-text {
+  margin-top: 10px;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}
+
+/* Animated Dots */
+.dots::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  animation: dots-animation 1.5s infinite steps(3);
+}
+
+/* Keyframes for Dots Animation */
+@keyframes dots-animation {
+  0% { content: ""; }
+  33% { content: "."; }
+  66% { content: ".."; }
+  100% { content: "..."; }
+}
+/* Content Section */
+.tab-content {
+  overflow: hidden;
+  width: 80%;
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 0px;
+  margin-left: 30%;
+}
+
+/* Upload Box */
+.upload-box{
+  align-items: center;
+  background: rgba(30, 30, 30, 0.85);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  max-width: 800px;
+  margin-top: 20px;
+  text-align: center;
+} 
+.content-box {
+  background: rgba(30, 30, 30, 0.85);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  max-width: 800px;
+  margin-top: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+/* Table Container */
+.table-container {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Table Styling */
+.styled-table {
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+  background: rgba(30, 30, 30, 0.9);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Table Header & Cells */
+.styled-table th, .styled-table td {
+  padding: 12px;
+  border: 1px solid #ffcc00;
+  text-align: center;
+  color: white;
+  min-width: 150px;
+}
+
+.styled-table th {
+  background: #333;
+}
+
+/* Attach File Button (Paperclip Icon) */
+.attach-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Paperclip Button */
+.paperclip-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #ffcc00;
+ 
+}
+
+.paperclip-btn:hover {
+  color: #121211;
+}
+
+/* Small Submit Button */
+.small-submit-btn {
+  background-color: #ffcc00;
+  color: black;
+  padding: 5px 10px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.small-submit-btn:hover {
+  background: #e6b800;
+}
+
+.verify-btn {
+  background-color: #d89c1c;
+  color: white;
+  font-size: 2px; /* Increase font size */
+  padding: 12px 24px; /* Adjust padding for a larger button */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  width: 10px; /* Adjust width */
+  height: 10px; /* Adjust height */
+  display: flex;
+  align-items: left;
+  justify-content: center;
+}
+
+.verify-btn:hover {
+  background-color: #e5c912;
+  transform: scale(1.05);
+}
+
+/* Badges for Document Status */
+.submitted-badge {
+  background-color: #28a745;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+}
+
+.required-badge {
+  background-color: #dc3545;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Verify Button - Positioned at the Bottom of the Table */
+.verify-button {
+  background-color: #ffcc00;
+  color: black;
+  padding: 4px 8px; /* Smaller padding */
+  font-size: 15px; /* Smaller font */
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+  display: block;
+  margin: 10px auto 0; /* Centers button at the bottom of the table */
+  width: 100%; /* Adjusts button width */
+}
+/* Hover Effect */
+.verify-button:hover {
+  background: #e6b800;
+  transform: scale(1.05);
+}
+/* Verify Button - Positioned at the Bottom of the Table */
+.next-button {
+  background-color: #ffcc00;
+  position:absolute;
+  color: black;
+  padding: 4px 8px; /* Smaller padding */
+  font-size: 15px; /* Smaller font */
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+  display: block;
+  margin: 10px auto 0; /* Centers button at the bottom of the table */
+  width: 10%; /* Adjusts button width */
+}
+/* Hover Effect */
+.next-button:hover {
+  background: #e6b800;
+  transform: scale(1.05);
+}
+/* Approve Button - Positioned at the Bottom of the Table (Risk Assesment) */
+
+.approve-button {
+  background-color: #ffcc00;
+  position:absolute;
+  color: black;
+  padding: 4px 8px; /* Smaller padding */
+  font-size: 15px; /* Smaller font */
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+  display: block;
+  margin: 10px auto 0; /* Centers button at the bottom of the table */
+  width:fit-content; /* Adjusts button width */
+  /* margin-left: -10%; */
+}
+/* Hover Effect */
+.approve-button:hover {
+  background: #e6b800;
+  transform: scale(1.05);
+}
+/* reject Button - Positioned at the Bottom of the Table (Risk Assesment) */
+.reject-button {
+  background-color: #ffcc00;
+  position:absolute;
+  color: black;
+  padding: 4px 8px; /* Smaller padding */
+  font-size: 15px; /* Smaller font */
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+  display: block;
+  margin: 10px auto 0; /* Centers button at the bottom of the table */
+  width: fit-content;
+  margin-left: 10%; /* Adjusts button width */
+}
+/* Hover Effect */
+.reject-button:hover {
+  background: #e6b800;
+  transform: scale(1.05);
+}
+/* Loan Risk Report */
+.risk-box{
+  margin: 0px;
+}
+.risk-report-button{
+  background-color: #ffcc00;
+  position:absolute;
+  color: black;
+  padding: 4px 8px; /* Smaller padding */
+  font-size: 15px; /* Smaller font */
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+  display: block;
+  margin: 10px ;
+  /* margin-left: 24%; */
+   /* Centers button at the bottom of the table */
+  width: fit-content;
+  margin-left: 20%;
+  flex-direction: row;
+}
+.risk-page-buttons{
+  display:grid;
+  flex-direction: column;
+  align-items: center;
+}
+/* .risk-report-button {
+  margin-bottom: 20px; 
+  padding: 10px 20px;
+  background-color: #ffcc00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px;
+  margin-left: 10%;
+  } */
+
+/* Hover Effect */
+.risk-report-button:hover {
+
+  background: #e6b800;
+  transform: scale(1.05);
+}
+
+.risk-dropdown{
+  background: #00000095;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;  
+  margin-top: 35%;
+  width: 53%;
+  margin-left: 0%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position:absolute;
+}
+.dropdown-menu {
+  background: #000000;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;  
+  margin: -10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position:absolute;
+}
+
+.dropdown-menu h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.dropdown-menu p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+/* .tabs-container{
+  overflow: hidden;
+  display: flex;
+  width: 76%;
+  height: 50px;
+  background: rgba(30, 30, 30, 0.9);
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+  border-bottom: 3px solid #ffcc00;
+  margin-left: 0%;
+  margin-top: 2px;
+} */
+.tabs-container {
+  overflow: hidden;
+  display: flex; /* ✅ Keeps elements in a row */
+  flex-direction:row-reverse; /* ✅ Keeps buttons stacked */
+  align-items: center; /* ✅ Aligns risk-container & buttons vertically */
+  justify-content: flex-start; /* ✅ Ensures items stay in place */
+  width: auto;
+  height: auto;
+  background: rgba(30, 30, 30, 0.9);
+  border-radius: 10px;
+  border-bottom: 3px solid #ffcc00;
+  margin-left: 0%;
+  margin-top: 2px;
+  padding: 10px;
+  gap: 20px; /* ✅ Adds space between risk-container & buttons */
+}
+
+/* Loan report buttons displayed on right */
+.lrr-buttons {
+  margin: 0; /* ✅ Removes unnecessary margin */
+  display: flex;
+  flex-direction: column; /* ✅ Keeps buttons stacked */
+  align-items: center;
+  justify-content: top;
+  height: 100%; /* ✅ Matches height with risk-container */
+  flex-shrink: 0; /* ✅ Prevents it from resizing */
+}
+
+.risktab-button{
+  flex-grow: 1;
+  margin-bottom: 0%;
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+  display: list-item;
+  font-weight: bold;
+  background: #ffcc00;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  border-radius: 10px;
+  width: fit-content;
+  color: #000000;
+}
+.proceed-button {
+  background-color: #ffcc00;
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  display: block;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+/* Hover Effect */
+.proceed-button:hover {
+  background: #e6b800;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 100%) {
+  /* .upload-box {
+      width: auto;
+      padding: 15px;
+  } */
+
+  .tab-bar {
+      flex-wrap: wrap;
+  }
+  .tabs-container {
+      flex-wrap: wrap;
+      overflow: hidden;
+  }
+
+  .styled-table {
+      width: 100%;
+  }
+
+/* Ensuring it's inside the table container */
+.table-container {
+  position: relative;
+  padding-bottom: 40px; /* Adds space for the verify button */
+}
+
+
+/* Responsive Design */
+@media (max-width: 100%) {
+  .verify-button {
+    font-size: 10px;
+    padding: 3px 6px;
+    margin-top: 8px;
+  }
+}
+
+}
